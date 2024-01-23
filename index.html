@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./assets/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+    <div class="main">
+        <div class="sidebar">
+            <div class="nav">
+                <div class="nav-option">
+                    <a id="home" href="#"><i class="fa-solid fa-house"></i></a>
+                    <label style="cursor: pointer;" for="home">Home</label>
+                </div>
+                <div class="nav-option">
+                    <a id="search" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <label for="search">Search</label>
+                </div>
+            </div>
+
+            <div class="library">
+                <div class="header">
+                    <img src="./assets/library_icon.png"></i>
+                    <h3>Your Library</h3>
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="card">
+                    <h5>Create your first playlist</h5>
+                    <p>It's easy, we'll help you</p>
+                    <button type="button">Create playlist</button>
+                </div>
+                <div class="card">
+                    <h5>Let's find some podcasts to follow</h5>
+                    <p>We'll keep you updated on new episodes</p>
+                    <button type="button">Browse podcasts</button>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="sticky-nav">
+                <div class="sticky-nav-body">
+                    <div>
+                        <div class="grp1 icon">
+                            <img src="./assets/backward_icon.png" alt="">
+                        </div>
+                        <div class="grp1 icon" id="hide">
+                            <img src="./assets/forward_icon.png" alt="">
+                        </div>
+                    </div>
+                    <div class="grp2">
+                        <button id="hide" type="button">Explore Premium</button>
+                        <button id="install-button" type="button"><i class="fa-regular fa-circle-down"></i>Install App</button>
+                        <div class="user"><i class="fa-regular fa-user"></i></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-content">
+                <div class="row" id="row-1">
+                    <div class="heading">
+                        <h2>Recently Played</h2>
+                    </div>
+                    <div class="cards-row">
+                        <div class="music-card" id="card-1">
+                            <div class="div-thumbnail">
+                                <img id="thumbnail" src="./assets/music cards/icon11.jpeg" alt="">
+                                <div class="div-card-play-button">
+                                    <img id="card-play-button" src="./assets/Spotify-Play-Button.png" alt="">
+                                </div>
+                            </div>
+                            <h4 class="card-title">Top 50 - Global</h4>
+                            <p class="card-info">Your daily update of the most played tracks right...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row" id="row-2">
+                    <div class="heading">
+                        <h2>Daily Mix</h2>
+                    </div>
+                    <div class="cards-row">
+                        <div class="music-card" id="card-1">
+                            <div class="div-thumbnail">
+                                <img id="thumbnail" src="./assets/music cards/default.jpeg" alt="">
+                                <div class="div-card-play-button">
+                                    <img id="card-play-button" src="./assets/Spotify-Play-Button.png" alt="">
+                                </div>
+                            </div>
+                            <h4 class="card-title">Top 50 - Global</h4>
+                            <p class="card-info">Your daily update of the most played tracks right...</p>
+                        </div>
+                        <div class="music-card" id="card-2">
+                            <div class="div-thumbnail">
+                                <img id="thumbnail" src="./assets/music cards/icon2.jpeg" alt="">
+                                <div class="div-card-play-button">
+                                    <img id="card-play-button" src="./assets/Spotify-Play-Button.png" alt="">
+                                </div>
+                            </div>
+                            <h4 class="card-title">Top 50 - Global</h4>
+                            <p class="card-info">Your daily update of the most played tracks right...</p>
+                        </div>
+                        <div class="music-card" id="card-3">
+                            <div class="div-thumbnail">
+                                <img id="thumbnail" src="./assets/music cards/icon4.jpeg" alt="">
+                                <div class="div-card-play-button">
+                                    <img id="card-play-button" src="./assets/Spotify-Play-Button.png" alt="">
+                                </div>
+                            </div>
+                            <h4 class="card-title">Top 50 - Global</h4>
+                            <p class="card-info">Your daily update of the most played tracks right...</p>
+                        </div>
+                        <div class="music-card" id="card-4">
+                            <div class="div-thumbnail">
+                                <img id="thumbnail" src="./assets/music cards/icon3.jpeg" alt="">
+                                <div class="div-card-play-button">
+                                    <img id="card-play-button" src="./assets/Spotify-Play-Button.png" alt="">
+                                </div>
+                            </div>
+                            <h4 class="card-title">Top 50 - Global</h4>
+                            <p class="card-info">Your daily update of the most played tracks right...</p>
+                        </div>
+                        <div class="music-card" id="card-5">
+                            <div class="div-thumbnail">
+                                <img id="thumbnail" src="./assets/music cards/icon5.jpeg" alt="">
+                                <div class="div-card-play-button">
+                                    <img id="card-play-button" src="./assets/Spotify-Play-Button.png" alt="">
+                                </div>
+                            </div>
+                            <h4 class="card-title">Top 50 - Global</h4>
+                            <p class="card-info">Your daily update of the most played tracks right...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row" id="row-3">
+                    <div class="heading">
+                        <h2>Made For You...</h2>
+                    </div>
+                    <div class="cards-row">
+                        <div class="music-card" id="card-1">
+                            <div class="div-thumbnail">
+                                <img id="thumbnail" src="./assets/music cards/icon14.jpeg" alt="">
+                                <div class="div-card-play-button">
+                                    <img id="card-play-button" src="./assets/Spotify-Play-Button.png" alt="">
+                                </div>
+                            </div>
+                            <h4 class="card-title">Top 50 - Global</h4>
+                            <p class="card-info">Your daily update of the most played tracks right...</p>
+                        </div>
+                        <div class="music-card" id="card-2">
+                            <div class="div-thumbnail">
+                                <img id="thumbnail" src="./assets/music cards/icon24.jpeg" alt="">
+                                <div class="div-card-play-button">
+                                    <img id="card-play-button" src="./assets/Spotify-Play-Button.png" alt="">
+                                </div>
+                            </div>
+                            <h4 class="card-title">Top 50 - Global</h4>
+                            <p class="card-info">Your daily update of the most played tracks right...</p>
+                        </div>
+                        <div class="music-card" id="card-3">
+                            <div class="div-thumbnail">
+                                <img id="thumbnail" src="./assets/music cards/icon17.jpeg" alt="">
+                                <div class="div-card-play-button">
+                                    <img id="card-play-button" src="./assets/Spotify-Play-Button.png" alt="">
+                                </div>
+                            </div>
+                            <h4 class="card-title">Top 50 - Global</h4>
+                            <p class="card-info">Your daily update of the most played tracks right...</p>
+                        </div>
+                        <div class="music-card" id="card-4">
+                            <div class="div-thumbnail">
+                                <img id="thumbnail" src="./assets/music cards/icon30.jpeg" alt="">
+                                <div class="div-card-play-button">
+                                    <img id="card-play-button" src="./assets/Spotify-Play-Button.png" alt="">
+                                </div>
+                            </div>
+                            <h4 class="card-title">Top 50 - Global</h4>
+                            <p class="card-info">Your daily update of the most played tracks right...</p>
+                        </div>
+                        <div class="music-card" id="card-5">
+                            <div class="div-thumbnail">
+                                <img id="thumbnail" src="./assets/music cards/icon32.jpeg" alt="">
+                                <div class="div-card-play-button">
+                                    <img id="card-play-button" src="./assets/Spotify-Play-Button.png" alt="">
+                                </div>
+                            </div>
+                            <h4 class="card-title">Top 50 - Global</h4>
+                            <p class="card-info">Your daily update of the most played tracks right...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row" id="row-4">
+                    <div class="heading">
+                        <h2>Episodes For You</h2>
+                    </div>
+                    <div class="cards-row">
+                        <div class="music-card" id="card-1">
+                            <div class="div-thumbnail">
+                                <img id="thumbnail" src="./assets/music cards/icon22.jpeg" alt="">
+                                <div class="div-card-play-button">
+                                    <img id="card-play-button" src="./assets/Spotify-Play-Button.png" alt="">
+                                </div>
+                            </div>
+                            <h4 class="card-title">Top 50 - Global</h4>
+                            <p class="card-info">Your daily update of the most played tracks right...</p>
+                        </div>
+                        <div class="music-card" id="card-2">
+                            <div class="div-thumbnail">
+                                <img id="thumbnail" src="./assets/music cards/icon20.jpeg" alt="">
+                                <div class="div-card-play-button">
+                                    <img id="card-play-button" src="./assets/Spotify-Play-Button.png" alt="">
+                                </div>
+                            </div>
+                            <h4 class="card-title">Top 50 - Global</h4>
+                            <p class="card-info">Your daily update of the most played tracks right...</p>
+                        </div>
+                        <div class="music-card" id="card-3">
+                            <div class="div-thumbnail">
+                                <img id="thumbnail" src="./assets/music cards/icon21.jpeg" alt="">
+                                <div class="div-card-play-button">
+                                    <img id="card-play-button" src="./assets/Spotify-Play-Button.png" alt="">
+                                </div>
+                            </div>
+                            <h4 class="card-title">Top 50 - Global</h4>
+                            <p class="card-info">Your daily update of the most played tracks right...</p>
+                        </div>
+                        <div class="music-card" id="card-4">
+                            <div class="div-thumbnail">
+                                <img id="thumbnail" src="./assets/music cards/icon23.jpeg" alt="">
+                                <div class="div-card-play-button">
+                                    <img id="card-play-button" src="./assets/Spotify-Play-Button.png" alt="">
+                                </div>
+                            </div>
+                            <h4 class="card-title">Top 50 - Global</h4>
+                            <p class="card-info">Your daily update of the most played tracks right...</p>
+                        </div>
+                        <div class="music-card" id="card-5">
+                            <div class="div-thumbnail">
+                                <img id="thumbnail" src="./assets/music cards/icon19.jpeg" alt="">
+                                <div class="div-card-play-button">
+                                    <img id="card-play-button" src="./assets/Spotify-Play-Button.png" alt="">
+                                </div>
+                            </div>
+                            <h4 class="card-title">Top 50 - Global</h4>
+                            <p class="card-info">Your daily update of the most played tracks right...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row" id="row-5">
+                    <div class="heading">
+                        <h2>Your top mixes</h2>
+                    </div>
+                    <div class="cards-row">
+                        <div class="music-card" id="card-1">
+                            <div class="div-thumbnail">
+                                <img id="thumbnail" src="./assets/music cards/icon6.jpeg" alt="">
+                                <div class="div-card-play-button">
+                                    <img id="card-play-button" src="./assets/Spotify-Play-Button.png" alt="">
+                                </div>
+                            </div>
+                            <h4 class="card-title">Top 50 - Global</h4>
+                            <p class="card-info">Your daily update of the most played tracks right...</p>
+                        </div>
+                        <div class="music-card" id="card-2">
+                            <div class="div-thumbnail">
+                                <img id="thumbnail" src="./assets/music cards/icon7.jpeg" alt="">
+                                <div class="div-card-play-button">
+                                    <img id="card-play-button" src="./assets/Spotify-Play-Button.png" alt="">
+                                </div>
+                            </div>
+                            <h4 class="card-title">Top 50 - Global</h4>
+                            <p class="card-info">Your daily update of the most played tracks right...</p>
+                        </div>
+                        <div class="music-card" id="card-3">
+                            <div class="div-thumbnail">
+                                <img id="thumbnail" src="./assets/music cards/icon8.jpeg" alt="">
+                                <div class="div-card-play-button">
+                                    <img id="card-play-button" src="./assets/Spotify-Play-Button.png" alt="">
+                                </div>
+                            </div>
+                            <h4 class="card-title">Top 50 - Global</h4>
+                            <p class="card-info">Your daily update of the most played tracks right...</p>
+                        </div>
+                        <div class="music-card" id="card-4">
+                            <div class="div-thumbnail">
+                                <img id="thumbnail" src="./assets/music cards/icon9.jpeg" alt="">
+                                <div class="div-card-play-button">
+                                    <img id="card-play-button" src="./assets/Spotify-Play-Button.png" alt="">
+                                </div>
+                            </div>
+                            <h4 class="card-title">Top 50 - Global</h4>
+                            <p class="card-info">Your daily update of the most played tracks right...</p>
+                        </div>
+                        <div class="music-card" id="card-5">
+                            <div class="div-thumbnail">
+                                <img id="thumbnail" src="./assets/music cards/icon10.jpeg" alt="">
+                                <div class="div-card-play-button">
+                                    <img id="card-play-button" src="./assets/Spotify-Play-Button.png" alt="">
+                                </div>
+                            </div>
+                            <h4 class="card-title">Top 50 - Global</h4>
+                            <p class="card-info">Your daily update of the most played tracks right...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row" id="row-6">
+                    <div class="heading">
+                        <h2>India's Best</h2>
+                    </div>
+                    <div class="cards-row">
+                        <div class="music-card" id="card-1">
+                            <div class="div-thumbnail">
+                                <img id="thumbnail" src="./assets/music cards/icon34.jpeg" alt="">
+                                <div class="div-card-play-button">
+                                    <img id="card-play-button" src="./assets/Spotify-Play-Button.png" alt="">
+                                </div>
+                            </div>
+                            <h4 class="card-title">Top 50 - Global</h4>
+                            <p class="card-info">Your daily update of the most played tracks right...</p>
+                        </div>
+                        <div class="music-card" id="card-2">
+                            <div class="div-thumbnail">
+                                <img id="thumbnail" src="./assets/music cards/icon28.jpeg" alt="">
+                                <div class="div-card-play-button">
+                                    <img id="card-play-button" src="./assets/Spotify-Play-Button.png" alt="">
+                                </div>
+                            </div>
+                            <h4 class="card-title">Top 50 - Global</h4>
+                            <p class="card-info">Your daily update of the most played tracks right...</p>
+                        </div>
+                        <div class="music-card" id="card-3">
+                            <div class="div-thumbnail">
+                                <img id="thumbnail" src="./assets/music cards/icon25.jpeg" alt="">
+                                <div class="div-card-play-button">
+                                    <img id="card-play-button" src="./assets/Spotify-Play-Button.png" alt="">
+                                </div>
+                            </div>
+                            <h4 class="card-title">Top 50 - Global</h4>
+                            <p class="card-info">Your daily update of the most played tracks right...</p>
+                        </div>
+                        <div class="music-card" id="card-4">
+                            <div class="div-thumbnail">
+                                <img id="thumbnail" src="./assets/music cards/icon29.jpeg" alt="">
+                                <div class="div-card-play-button">
+                                    <img id="card-play-button" src="./assets/Spotify-Play-Button.png" alt="">
+                                </div>
+                            </div>
+                            <h4 class="card-title">Top 50 - Global</h4>
+                            <p class="card-info">Your daily update of the most played tracks right...</p>
+                        </div>
+                        <div class="music-card" id="card-5">
+                            <div class="div-thumbnail">
+                                <img id="thumbnail" src="./assets/music cards/icon27.jpeg" alt="">
+                                <div class="div-card-play-button">
+                                    <img id="card-play-button" src="./assets/Spotify-Play-Button.png" alt="">
+                                </div>
+                            </div>
+                            <h4 class="card-title">Top 50 - Global</h4>
+                            <p class="card-info">Your daily update of the most played tracks right...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row" id="row-7">
+                    <div class="heading">
+                        <h2>Popular albums</h2>
+                    </div>
+                    <div class="cards-row">
+                        <div class="music-card" id="card-1">
+                            <div class="div-thumbnail">
+                                <img id="thumbnail" src="./assets/music cards/icon13.jpeg" alt="">
+                                <div class="div-card-play-button">
+                                    <img id="card-play-button" src="./assets/Spotify-Play-Button.png" alt="">
+                                </div>
+                            </div>
+                            <h4 class="card-title">Top 50 - Global</h4>
+                            <p class="card-info">Your daily update of the most played tracks right...</p>
+                        </div>
+                        <div class="music-card" id="card-2">
+                            <div class="div-thumbnail">
+                                <img id="thumbnail" src="./assets/music cards/icon33.jpeg" alt="">
+                                <div class="div-card-play-button">
+                                    <img id="card-play-button" src="./assets/Spotify-Play-Button.png" alt="">
+                                </div>
+                            </div>
+                            <h4 class="card-title">Top 50 - Global</h4>
+                            <p class="card-info">Your daily update of the most played tracks right...</p>
+                        </div>
+                        <div class="music-card" id="card-3">
+                            <div class="div-thumbnail">
+                                <img id="thumbnail" src="./assets/music cards/icon35.jpeg" alt="">
+                                <div class="div-card-play-button">
+                                    <img id="card-play-button" src="./assets/Spotify-Play-Button.png" alt="">
+                                </div>
+                            </div>
+                            <h4 class="card-title">Top 50 - Global</h4>
+                            <p class="card-info">Your daily update of the most played tracks right...</p>
+                        </div>
+                        <div class="music-card" id="card-4">
+                            <div class="div-thumbnail">
+                                <img id="thumbnail" src="./assets/music cards/icon16.jpeg" alt="">
+                                <div class="div-card-play-button">
+                                    <img id="card-play-button" src="./assets/Spotify-Play-Button.png" alt="">
+                                </div>
+                            </div>
+                            <h4 class="card-title">Top 50 - Global</h4>
+                            <p class="card-info">Your daily update of the most played tracks right...</p>
+                        </div>
+                        <div class="music-card" id="card-5">
+                            <div class="div-thumbnail">
+                                <img id="thumbnail" src="./assets/music cards/icon31.jpeg" alt="">
+                                <div class="div-card-play-button">
+                                    <img id="card-play-button" src="./assets/Spotify-Play-Button.png" alt="">
+                                </div>
+                            </div>
+                            <h4 class="card-title">Top 50 - Global</h4>
+                            <p class="card-info">Your daily update of the most played tracks right...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer">
+                <div class="endline"></div>
+            </div>
+        </div>
+
+
+        <div class="player-body">
+            <div class="player-body-left">
+                <img class="thumbnail" src="./assets/ruan.jpeg" alt="">
+                <div class="song-info">
+                    <h2 class="song-title">Ruaan (From "Tiger 3")</h2>
+                    <p>Pritam, Arijit Singh, Irshad Kamil</p>
+                </div>
+                <i class="fa-regular fa-heart"></i>
+            </div>
+
+            <div class="player-body-middle">
+                <div class="player-controls">
+                    <img src="./assets/player_icon1.png" alt="">
+                    <img src="./assets/player_icon2.png" alt="">
+                    <img id="play-pause-button" src="./assets/player_icon3.png" alt="">
+                    <img src="./assets/player_icon4.png" alt="">
+                    <img src="./assets/player_icon5.png" alt="">
+                </div>
+                <div class="progress-bar">
+                    <span class="curr-time">2:41</span>
+                    <input class="progress" type="range" min="0" max="100">
+                    <span class="tot-time">3:52</span>
+                </div>
+            </div>
+            <div class="player-body-right">
+                <i class="fa-regular fa-circle-play"></i>
+                <span class="material-symbols-outlined">lyrics</span>
+                <i class="fa-brands fa-stack-overflow"></i>
+                <i class="fa-solid fa-headphones-simple"></i>
+                <i class="fa-solid fa-volume-high"></i>
+                <input class="progress" type="range" min="0" max="100">
+                <i class="fa-solid fa-down-left-and-up-right-to-center"></i>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
